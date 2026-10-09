@@ -38,7 +38,7 @@ async def response_manipulation(response: Response):
         expires=3600,
         httponly=True,
         secure=True,
-        domain="localhost",
+        domain="127.0.0.1",
         path="/",
     )
     return JSONResponse(status_code=201, content="Demo", headers={"key": "value"})
